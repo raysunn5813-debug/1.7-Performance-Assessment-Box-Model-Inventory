@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Author: Raymond Cantey 
+        Date: 8/11/2026
+        Purpose: To structure a figurine inventory webpage using semantic HTML and CSS box model properties to organize layout and visual structure.
+    -->
+    <meta charset="UTF-8">
+    <title>Box Model Inventory</title>
+    
+    <style>
+        /* Internal Stylesheet adjusting Box Model Properties */
+        
+        /* 1. Main element: adjusting width, margin, and padding */
+        main {
+            width: 80%;
+            margin: 0 auto; /* Centers the content */
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* 2. Section element: adjusting border, padding, and margin */
+        section {
+            border: 2px solid #2c3e50;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* 3. Table element: adjusting width, margin, and border */
+        table {
+            width: 100%;
+            margin: 10px 0;
+            border-collapse: collapse;
+        }
+
+        /* Additional Table Styling for readability (padding and border) */
+        th, td {
+            border: 1px solid #7f8c8d;
+            padding: 12px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Figurine Inventory</h1>
+</header>
+
+<!-- Semantic Element 1: main -->
+<main>
+    
+    <!-- Semantic Element 2: section -->
+    <section>
+        <h2>3D Printed Collectibles</h2>
+        
+        <!-- Semantic Element 3: article -->
+        <article>
+            <p>This section contains the current inventory levels for our custom 3D-printed figurines and models.</p>
+            
+            <!-- Inventory Table: 3+ columns, 3+ rows -->
+            <table>
+                <!-- Semantic Element 4: caption -->
+                <caption>Warehouse Stock: Q3 2026</caption>
+                <thead>
+                    <tr>
+                        <th>Figurine Name</th>
+                        <th>Material</th>
+                        <th>Stock Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Miniature V8 Engine Block</td>
+                        <td>PLA</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Wu-Tang Logo Display Stand</td>
+                        <td>Resin</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Display Glasses Frame</td>
+                        <td>PETG</td>
+                        <td>22</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+</main>
+
+<!-- Footer with at least two inline styles (background-color, color, text-align, padding) -->
+<footer style="background-color: #2c3e50; color: white; text-align: center; padding: 15px;">
+    <p>&copy; 2026 Raycan2849</p>
+</footer>
+
+</body>
+</html>
